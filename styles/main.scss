@@ -1,0 +1,100 @@
+body{
+	background-color: #ccffcc;
+
+}
+
+header{
+	background-color: #00e600;
+}
+
+h1,h2,h3 {
+	font-weight: bold;
+	font-family: verdana;
+	text-align: center;
+	
+	
+}
+
+
+h1 {
+	font-size: 25px;
+	color: #ff6666;
+}
+h2 {
+        font-size: 20x;
+        color: #66b3ff;
+}
+h3 {
+        font-size: 15px;
+        color: #ffff00;
+}
+
+p {
+	font-weight: bold;
+	a {
+		color: #AAA;
+		&:hover{
+			color: #FF0000;
+		}
+	}
+}
+
+nav {
+	background-color: #80ff80;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li { display: inline-block; }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
+
+
+
+
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.box { @include border-radius(10px); }
+
+.container {width: 100%; }
+
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+//* Adding nests for the nav bar*//
+.container {width: 100%; }
+
+
+article[role="main"] {
+  float: left;
+  width: 600px / 960px * 100%;
+}
+
+aside[role="complementary"] {
+  float: right;
+  width: 300px / 960px * 100%;
+}
+
+ 
